@@ -8,13 +8,13 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <router-link class="nav-link" :to="'/'">Home <span class="sr-only">(current)</span></router-link>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
+        <router-link class="nav-link" :to="'/contact'">Contact</router-link>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <router-link class="nav-link" :to="'/pricing'">Pricing</router-link>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -22,19 +22,23 @@
     </ul>
   </div>
 </nav>
-    <PostsExample/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld'
 import PostsExample from './components/Posts'
+import Contact from './components/Contact'
+import Pricing from './components/Pricing.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    PostsExample
+    PostsExample,
+    Contact,
+    Pricing
   }
 }
 </script>
