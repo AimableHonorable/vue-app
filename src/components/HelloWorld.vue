@@ -1,113 +1,56 @@
-<template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          Core Docs
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
-          Forum
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
-      <br>
-      <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          vuex
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
-      </li>
-    </ul>
+<template id="">
+  <div class="container">
+    <div class="row align-items-center h-100">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <img src="../assets/facebook.svg" alt="" width="300">
+        <h3>Connect with friends and the world around you on Facebook.</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <div class="form shadow">
+          <form class="d-block" action="index.html" method="post">
+            <div class="form-group">
+              <input type="text" name="" value="" class="form-control" placeholder="Email address">
+            </div>
+            <div class="form-group">
+              <input type="text" name="" value="" class="form-control" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <input type="submit" name="" value="Log In" class="form-control btn-primary">
+            </div>
+            <div class="text-center">
+              <a href="#" class="text-primary">Forgot Password?</a>
+            </div>
+          </form>
+          <hr>
+          <div class="form-group text-center">
+            <button type="button" name="button" class="btn btn-success">Create account</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   </div>
 </template>
-
-<script>
-export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+<style media="screen" scoped="true">
+  .container{
+    height: 100vh;
   }
-}
-</script>
+  .card{
+    border: none;
+    background-color: transparent;
+  }
+  .form{
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  }
 </style>
